@@ -20,7 +20,7 @@ app.get("/api/startup", async (req, res) => {
   }
 });
 
-app.get("/api/startup:id", async (req, res) => {
+app.get("/api/startup/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const startup = await Startup.findById(id);
@@ -34,6 +34,37 @@ app.post("/api/startup", async (req, res) => {
   try {
     const startup = await Startup.create(req.body);
     res.status(201).json(startup);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+app.put("/api/startup/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const startup = await Startup.findByIdAndUpdate(id, req.body);
+
+    if (!startup) {
+      return res.status(404).json({ message: "Startup not found" });
+    }
+
+    const updatedStartup = await Startup.findById(id);
+    res.status(201).json(updatedStartup);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+app.delete("/api/startup/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const startup = await Startup.findByIdAndDelete(id, req.body);
+
+    if (!startup) {
+      return res.status(404).json({ message: "Startup not found" });
+    }
+
+    res.status(201).json({ message: "Startup successfull deleted" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
