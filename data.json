@@ -1,0 +1,496 @@
+{
+  {
+    "id": 0,
+    "name": "AgriSense Innovations",
+    "industry": "AgriTech",
+    "founded": 2019,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "12 Innovation Hub",
+      "city": "Lagos",
+      "state": "Lagos"
+    },
+    "founders": [
+      {
+        "name": "Chinwe Okafor",
+        "role": "CEO"
+      },
+      {
+        "name": "Emeka Obi",
+        "role": "CTO"
+      }
+    ],
+    "employees": 30,
+    "website": "https://www.agrisense.ng",
+    "mission_statement": "Empowering African farmers with data-driven agricultural solutions.",
+    "description": "AgriSense Innovations develops IoT sensors and AI analytics for precision farming, helping farmers optimize yields and reduce waste.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/agrisense_logo.png"
+  },
+  {
+    "id": 1,
+    "name": "KudiPay",
+    "industry": "FinTech",
+    "founded": 2017,
+    "country": "Ghana",
+    "continent": "Africa",
+    "business_address": {
+      "street": "5 Kwame Nkrumah Ave",
+      "city": "Accra",
+      "state": "Greater Accra"
+    },
+    "founders": [
+      {
+        "name": "Ama Serwaa",
+        "role": "CEO"
+      },
+      {
+        "name": "Kwesi Mensah",
+        "role": "COO"
+      }
+    ],
+    "employees": 85,
+    "website": "https://www.kudipay.gh",
+    "mission_statement": "Revolutionizing digital payments for a cashless Africa.",
+    "description": "KudiPay offers a seamless mobile payment platform for individuals and businesses across West Africa.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/kudipay_logo.png"
+  },
+  {
+    "id": 2,
+    "name": "HealthConnect Africa",
+    "industry": "HealthTech",
+    "founded": 2020,
+    "country": "Kenya",
+    "continent": "Africa",
+    "business_address": {
+      "street": "7 Medical Rd",
+      "city": "Nairobi",
+      "state": "Nairobi"
+    },
+    "founders": [
+      {
+        "name": "Dr. Aisha Hassan",
+        "role": "CEO"
+      }
+    ],
+    "employees": 40,
+    "website": "https://www.healthconnect.ke",
+    "mission_statement": "Bridging the healthcare gap through innovative technology.",
+    "description": "HealthConnect Africa provides telemedicine services and a digital health record system for underserved communities.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/healthconnect_logo.png"
+  },
+  {
+    "id": 3,
+    "name": "SokoLink E-commerce",
+    "industry": "E-commerce",
+    "founded": 2018,
+    "country": "South Africa",
+    "continent": "Africa",
+    "business_address": {
+      "street": "20 Market Street",
+      "city": "Cape Town",
+      "state": "Western Cape"
+    },
+    "founders": [
+      {
+        "name": "Thabo Mbeki",
+        "role": "CEO"
+      },
+      {
+        "name": "Naledi Khumalo",
+        "role": "CMO"
+      }
+    ],
+    "employees": 110,
+    "website": "https://www.sokolink.co.za",
+    "mission_statement": "Connecting African artisans to the global marketplace.",
+    "description": "SokoLink E-commerce is an online platform empowering local artisans and small businesses to sell their products worldwide.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/sokolink_logo.png"
+  },
+  {
+    "id": 4,
+    "name": "EduBridge Learning",
+    "industry": "EdTech",
+    "founded": 2021,
+    "country": "Rwanda",
+    "continent": "Africa",
+    "business_address": {
+      "street": "15 Knowledge Lane",
+      "city": "Kigali",
+      "state": "Kigali City"
+    },
+    "founders": [
+      {
+        "name": "Umutoni Gasana",
+        "role": "CEO"
+      }
+    ],
+    "employees": 25,
+    "website": "https://www.edubridge.rw",
+    "mission_statement": "Making quality education accessible across Africa.",
+    "description": "EduBridge Learning offers affordable online courses and vocational training tailored for the African job market.",
+    "is_seeking_funding": true,
+    "has_mvp": false,
+    "image_url": "https://example.com/edubridge_logo.png"
+  },
+  {
+    "id": 5,
+    "name": "EcoCharge Solutions",
+    "industry": "Renewable Energy",
+    "founded": 2020,
+    "country": "Tanzania",
+    "continent": "Africa",
+    "business_address": {
+      "street": "3 Energy Way",
+      "city": "Dar es Salaam",
+      "state": "Dar es Salaam"
+    },
+    "founders": [
+      {
+        "name": "Juma Hassan",
+        "role": "CEO"
+      },
+      {
+        "name": "Amina Salum",
+        "role": "CTO"
+      }
+    ],
+    "employees": 50,
+    "website": "https://www.ecocharge.tz",
+    "mission_statement": "Providing sustainable energy solutions for rural African communities.",
+    "description": "EcoCharge Solutions develops and deploys off-grid solar energy systems for homes and businesses in remote areas.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/ecocharge_logo.png"
+  },
+  {
+    "id": 6,
+    "name": "LogisticsAfrica",
+    "industry": "Logistics",
+    "founded": 2019,
+    "country": "Egypt",
+    "continent": "Africa",
+    "business_address": {
+      "street": "8 Commerce Street",
+      "city": "Cairo",
+      "state": "Cairo Governorate"
+    },
+    "founders": [
+      {
+        "name": "Ahmed Zaki",
+        "role": "CEO"
+      },
+      {
+        "name": "Sara Mahmoud",
+        "role": "Head of Operations"
+      }
+    ],
+    "employees": 70,
+    "website": "https://www.logisticsafrica.eg",
+    "mission_statement": "Optimizing supply chains across the African continent.",
+    "description": "LogisticsAfrica leverages technology to provide efficient and transparent freight and warehousing services.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/logisticsafrica_logo.png"
+  },
+  {
+    "id": 7,
+    "name": "DigitalCraft Studios",
+    "industry": "Creative Tech",
+    "founded": 2022,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "45 Tech Hub Road",
+      "city": "Abuja",
+      "state": "FCT"
+    },
+    "founders": [
+      {
+        "name": "Femi Adebayo",
+        "role": "CEO"
+      },
+      {
+        "name": "Nkechi Okoro",
+        "role": "Creative Director"
+      }
+    ],
+    "employees": 15,
+    "website": "https://www.digitalcraft.ng",
+    "mission_statement": "Innovating digital experiences for African businesses and beyond.",
+    "description": "DigitalCraft Studios specializes in UI/UX design, web development, and immersive digital content creation.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/digitalcraft_logo.png"
+  },
+  {
+    "id": 8,
+    "name": "WasteWise Technologies",
+    "industry": "CleanTech",
+    "founded": 2020,
+    "country": "South Africa",
+    "continent": "Africa",
+    "business_address": {
+      "street": "10 Green Lane",
+      "city": "Johannesburg",
+      "state": "Gauteng"
+    },
+    "founders": [
+      {
+        "name": "Sipho Dlamini",
+        "role": "CEO"
+      }
+    ],
+    "employees": 22,
+    "website": "https://www.wastewise.co.za",
+    "mission_statement": "Transforming waste into valuable resources for a sustainable future.",
+    "description": "WasteWise Technologies develops smart waste management solutions, including recycling platforms and waste-to-energy systems.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/wastewise_logo.png"
+  },
+  {
+    "id": 9,
+    "name": "AfriFoods Delivery",
+    "industry": "FoodTech",
+    "founded": 2021,
+    "country": "Morocco",
+    "continent": "Africa",
+    "business_address": {
+      "street": "25 Spice Road",
+      "city": "Casablanca",
+      "state": "Casablanca-Settat"
+    },
+    "founders": [
+      {
+        "name": "Fatima Zahra",
+        "role": "CEO"
+      },
+      {
+        "name": "Tariq Benali",
+        "role": "Operations Lead"
+      }
+    ],
+    "employees": 55,
+    "website": "https://www.afrifoods.ma",
+    "mission_statement": "Bringing the best of African cuisine to your doorstep, powered by technology.",
+    "description": "AfriFoods Delivery is a food delivery platform specializing in local African dishes and ingredients, connecting customers with authentic culinary experiences.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/afrifoods_logo.png"
+  },
+  {
+    "id": 10,
+    "name": "CodeForAfrica",
+    "industry": "EdTech",
+    "founded": 2018,
+    "country": "Ghana",
+    "continent": "Africa",
+    "business_address": {
+      "street": "1 Tech Boulevard",
+      "city": "Accra",
+      "state": "Greater Accra"
+    },
+    "founders": [
+      {
+        "name": "Kofi Owusu",
+        "role": "CEO"
+      }
+    ],
+    "employees": 35,
+    "website": "https://www.codeforafrica.gh",
+    "mission_statement": "Equipping the next generation of African tech leaders with essential coding skills.",
+    "description": "CodeForAfrica provides immersive coding bootcamps and online resources to foster digital literacy and tech talent across the continent.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/codeforafrica_logo.png"
+  },
+  {
+    "id": 11,
+    "name": "PropertyGenius",
+    "industry": "PropTech",
+    "founded": 2019,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "7 Real Estate Avenue",
+      "city": "Lagos",
+      "state": "Lagos"
+    },
+    "founders": [
+      {
+        "name": "Chidi Okoro",
+        "role": "CEO"
+      },
+      {
+        "name": "Adaeze Nnadi",
+        "role": "Head of Product"
+      }
+    ],
+    "employees": 45,
+    "website": "https://www.propertygenius.ng",
+    "mission_statement": "Simplifying property search and management in Africa with innovative technology.",
+    "description": "PropertyGenius is an online platform for buying, selling, and renting properties, integrating virtual tours and secure payment options.",
+    "is_seeking_funding": true,
+    "has_mvp": true,
+    "image_url": "https://example.com/propertygenius_logo.png"
+  },
+  {
+    "id": 12,
+    "name": "SafeRide Mobility",
+    "industry": "Mobility",
+    "founded": 2020,
+    "country": "Kenya",
+    "continent": "Africa",
+    "business_address": {
+      "street": "14 Transport Lane",
+      "city": "Nairobi",
+      "state": "Nairobi"
+    },
+    "founders": [
+      {
+        "name": "David Kimani",
+        "role": "CEO"
+      }
+    ],
+    "employees": 60,
+    "website": "https://www.saferide.ke",
+    "mission_statement": "Ensuring safe, efficient, and affordable urban mobility for all Africans.",
+    "description": "SafeRide Mobility offers a ride-hailing service with a strong focus on driver vetting, vehicle safety, and customer support.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/saferide_logo.png"
+  },
+  {
+    "id": 13,
+    "name": "Moniepoint (formerly TeamApt)",
+    "industry": "FinTech",
+    "founded": 2015,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "Lagos",
+      "city": "Lagos",
+      "state": "Lagos"
+    },
+    "founders": [
+      {
+        "name": "Tosin Eniolorunda",
+        "role": "CEO"
+      },
+      {
+        "name": "Felix Ike",
+        "role": "CTO"
+      }
+    ],
+    "employees": 1800,
+    "website": "https://moniepoint.com/",
+    "mission_statement": "To create financial happiness for everyone.",
+    "description": "Moniepoint is a leading provider of financial services to businesses and individuals in Nigeria and expanding to other emerging markets, offering payment, banking, and credit solutions.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/moniepoint_logo.png"
+  },
+  {
+    "id": 14,
+    "name": "Opay",
+    "industry": "FinTech",
+    "founded": 2018,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "Ikeja",
+      "city": "Lagos",
+      "state": "Lagos State"
+    },
+    "founders": [
+      {
+        "name": "Yahui Zhou",
+        "role": "Founder"
+      }
+    ],
+    "employees": 5000,
+    "website": "https://www.opayweb.com/",
+    "mission_statement": "To provide accessible digital financial services to bridge the financial inclusion gap.",
+    "description": "OPay is a mobile payment and financial service platform that offers a wide range of services including mobile payments, money transfers, savings, and loans, aiming to drive financial inclusion in Nigeria and beyond.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/opay_logo.png"
+  },
+  {
+    "id": 15,
+    "name": "Kuda Microfinance Bank",
+    "industry": "FinTech",
+    "founded": 2019,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "London (Headquarters)",
+      "city": "Lagos",
+      "state": "Lagos"
+    },
+    "founders": [
+      {
+        "name": "Babs Ogundeyi",
+        "role": "CEO"
+      },
+      {
+        "name": "Musty Mustapha",
+        "role": "CTO"
+      }
+    ],
+    "employees": 500,
+    "website": "https://kuda.com/",
+    "mission_statement": "The money app for Africans.",
+    "description": "Kuda is Nigeria's first digital-only bank, offering a full range of banking services accessible via mobile, designed to provide affordable and seamless financial solutions.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/kuda_logo.png"
+  },
+  {
+    "id": 16,
+    "name": "Jumia",
+    "industry": "E-commerce",
+    "founded": 2012,
+    "country": "Nigeria",
+    "continent": "Africa",
+    "business_address": {
+      "street": "Lagos",
+      "city": "Lagos",
+      "state": "Lagos"
+    },
+    "founders": [
+      {
+        "name": "Jérémy Hodara",
+        "role": "Co-founder"
+      },
+      {
+        "name": "Sacha Poignonnec",
+        "role": "Co-founder"
+      },
+      {
+        "name": "Tunde Kehinde",
+        "role": "Co-founder"
+      },
+      {
+        "name": "Raphael Kofi Afaedor",
+        "role": "Co-founder"
+      }
+    ],
+    "employees": 3000,
+    "website": "https://group.jumia.com/",
+    "mission_statement": "To improve the everyday lives of Africans through technology.",
+    "description": "Jumia is a leading pan-African e-commerce platform, often referred to as 'the Amazon of Africa,' offering a wide range of products and services including an online marketplace, food delivery, and payment solutions.",
+    "is_seeking_funding": false,
+    "has_mvp": true,
+    "image_url": "https://example.com/jumia_logo.png"
+  }
+}

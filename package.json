@@ -1,0 +1,26 @@
+{
+  "name": "startup_info_api",
+  "version": "1.0.0",
+  "description": "an api to get info and tech company",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okoro91/startup_info_api.git"
+  },
+  "author": "mi okoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okoro91/startup_info_api/issues"
+  },
+  "homepage": "https://github.com/Okoro91/startup_info_api#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
+    "nodemon": "^3.1.10"
+  }
+}
