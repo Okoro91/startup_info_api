@@ -1,5 +1,37 @@
 import mongoose, { Schema } from "mongoose";
 
+const founderSchema = new Schema(
+  {
+    name: {
+      type: String,
+      required: false,
+    },
+    role: {
+      type: String,
+      required: false,
+    },
+  },
+  { _id: false }
+);
+
+const businessAddressSchema = new Schema(
+  {
+    street: {
+      type: String,
+      required: false,
+    },
+    city: {
+      type: String,
+      required: false,
+    },
+    state: {
+      type: String,
+      required: false,
+    },
+  },
+  { _id: false }
+);
+
 const StartupSchema = new Schema(
   {
     name: {
@@ -22,17 +54,15 @@ const StartupSchema = new Schema(
       type: String,
       required: false,
     },
-    founders: {
-      type: String,
-      required: false,
-    },
+    business_address: businessAddressSchema,
+    founders: [founderSchema],
     employees: {
       type: Number,
       required: false,
     },
     website: {
       type: String,
-      required: false,
+      required: true,
     },
     mission_statement: {
       type: String,
