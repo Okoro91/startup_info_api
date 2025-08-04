@@ -1,84 +1,32 @@
 import express from "express";
 import mongoose from "mongoose";
-import Startup from "./models/startup.js";
+import dotenv from "dotenv";
+import startupRoutes from "./routes/startupRoutes.js";
+
+dotenv.config();
 
 const app = express();
-const PORT = 3500;
+const PORT = process.env.PORT || 3500;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Startup Info API");
+  res.send("Welcome to the Startup Info API! Access /api/startups for data.");
 });
 
-app.get("/api/startup", async (req, res) => {
-  try {
-    const startup = await Startup.find({});
-    res.status(201).json(startup);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-app.get("/api/startup/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const startup = await Startup.findById(id);
-    res.status(201).json(startup);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-app.post("/api/startup", async (req, res) => {
-  try {
-    const startup = await Startup.create(req.body);
-    res.status(201).json(startup);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-app.put("/api/startup/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const startup = await Startup.findByIdAndUpdate(id, req.body);
-
-    if (!startup) {
-      return res.status(404).json({ message: "Startup not found" });
-    }
-
-    const updatedStartup = await Startup.findById(id);
-    res.status(201).json(updatedStartup);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-app.delete("/api/startup/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const startup = await Startup.findByIdAndDelete(id, req.body);
-
-    if (!startup) {
-      return res.status(404).json({ message: "Startup not found" });
-    }
-
-    res.status(201).json({ message: "Startup successfull deleted" });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+app.use("/api/startups", startupRoutes);
 
 mongoose
-  .connect(
-    "mongodb+srv://okoro91:Mifracri91@startupdb.vmryvoy.mongodb.net/startup-api?retryWrites=true&w=majority&appName=startupDB"
-  )
-  .then(() => console.log("Connected to the database!"))
-  .catch(() => {
-    console.log("connection error");
+  .connect(MONGODB_URI)
+  .then(() => {
+    console.log("Connected to the database!");
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Database connection error:", error);
+    process.exit(1);
   });
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
