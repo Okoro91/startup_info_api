@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import startupRoutes from "./routes/startupRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/startups", startupRoutes);
+app.use("/api/users", userRoutes);
 
 mongoose
   .connect(MONGODB_URI)
