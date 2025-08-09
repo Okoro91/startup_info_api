@@ -27,19 +27,15 @@ export const registerUser = async (req, res) => {
       return res.status(409).json({ message: "Username already exists." });
     }
     console.error("Error registering user:", error);
-    res.status(500).json({ message: "Internal server error" });
+    res
+      .status(500)
+      .json({ message: "Internal server error", error: error.message });
   }
 };
 
 export const loginUser = async (req, res) => {
   try {
     const { username, password } = req.body;
-
-    if (!username || !password) {
-      return res
-        .status(400)
-        .json({ message: "Username and password are required" });
-    }
 
     const user = await User.findOne({ username });
     if (!user) {
@@ -64,6 +60,8 @@ export const loginUser = async (req, res) => {
       .json({ token, role: user.role, message: "Logged in successfully!" });
   } catch (error) {
     console.error("Error logging in user:", error);
-    res.status(500).json({ message: "Internal server error" });
+    res
+      .status(500)
+      .json({ message: "Internal server error", error: error.message });
   }
 };

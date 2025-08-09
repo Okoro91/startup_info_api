@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 const SALT_ROUNDS = parseInt(process.env.BCRYPT_SALT_ROUNDS, 10) || 12;
 
@@ -33,7 +33,7 @@ const hashPassword = async (password) => {
   return await bcrypt.hash(password, salt);
 };
 
-userSchema.pre("save", async (next) => {
+userSchema.pre("save", async function (next) {
   if (this.isModified("password")) {
     try {
       this.password = await hashPassword(this.password);
