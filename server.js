@@ -1,4 +1,6 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import startupRoutes from "./routes/startupRoutes.js";
@@ -13,9 +15,10 @@ const MONGODB_URI = process.env.MONGODB_URI;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Startup Info API! Access /api/startups for data.");
-});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/startups", startupRoutes);
 app.use("/api/users", userRoutes);

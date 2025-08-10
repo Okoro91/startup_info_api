@@ -4,10 +4,8 @@ export const getAllStartups = async (req, res) => {
   try {
     const { search, industry, country } = req.query;
 
-    // Initialize an array of conditions for the $and operator
     const queryConditions = [];
 
-    // Add search conditions to the array if a search term is provided
     if (search) {
       queryConditions.push({
         $or: [

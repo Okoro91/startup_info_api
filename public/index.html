@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Info API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md p-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-800">Startup Info API</h1>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-6 mt-8">
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">API Documentation & Usage</h2>
+        <p class="text-gray-700 mb-4">
+          Welcome to the Startup Info API. You can fetch a list of startups and
+          filter them using various search queries.
+        </p>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">Endpoints</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-600">
+            <li>
+              <code class="bg-gray-200 p-1 rounded">GET /api/startups</code> -
+              Fetches all startups.
+            </li>
+            <li>
+              <code class="bg-gray-200 p-1 rounded">GET /api/startups/:id</code>
+              - Fetches a single startup by its ID.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">Search Queries</h3>
+          <p class="text-gray-700">
+            You can add these parameters to the `/api/startups` endpoint:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-gray-600 mt-2">
+            <li>
+              <code class="bg-gray-200 p-1 rounded">?search=keyword</code> -
+              Fuzzy search by startup name, industry, description, or founder's
+              name.
+            </li>
+            <li>
+              <code class="bg-gray-200 p-1 rounded">?industry=FinTech</code> -
+              Filter by a specific industry.
+            </li>
+            <li>
+              <code class="bg-gray-200 p-1 rounded">?country=Nigeria</code> -
+              Filter by country.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-medium mb-4">Try It Out</h3>
+          <div class="flex items-center space-x-4 mb-4">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search startups..."
+              class="flex-grow p-2 border border-gray-300 rounded-md"
+            />
+            <button
+              id="fetchButton"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+            >
+              Search
+            </button>
+          </div>
+          <div id="results" class="space-y-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+      <p>&copy; Date.getFullYear() Startup Info API. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
